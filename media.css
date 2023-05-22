@@ -1,0 +1,267 @@
+@media screen and (max-width: 992px) {
+  nav ul {
+    display: none;
+  }
+  .hero .hero-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  .hero .content {
+    width: 90%;
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+  }
+
+  .hero .content h1 {
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 700;
+    width: 100%;
+  }
+
+  .hero .content p {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .hero .buttons {
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+  }
+
+  .hero .buttons a:nth-child(2) {
+    margin-left: 0;
+  }
+
+  .hero .sofa {
+    width: 100%;
+  }
+
+  .hero .sofa img {
+    margin: auto;
+  }
+
+  .choose-us {
+    width: 100%;
+    height: 590px;
+  }
+  .choose-us h1 {
+    font-size: 28px;
+    padding: 10px 0;
+  }
+  .cards {
+    display: flex;
+    flex-flow: column;
+    flex: 0 0 50%;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+  }
+
+  .cards .card-body {
+    width: 70%;
+    height: 134px;
+  }
+
+  .cards .card-body .card-content {
+    width: 100%;
+    height: 89px;
+    margin: auto;
+    padding: 20px 40px 0 40px;
+  }
+
+  .cards .card-body .card-content h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 21.94px;
+  }
+
+  .cards .card-body .card-content p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .cards .card-body .card-icon {
+    width: 70px;
+    height: 70px;
+    top: 25%;
+    left: -40px;
+  }
+
+  /* ////PRODUCTS/// */
+
+  .explore a {
+    width: 90%;
+  }
+
+  .review {
+    height: 777px;
+  }
+
+  .review-container .container {
+    flex-flow: column;
+  }
+
+  .review-container h1 {
+    width: 80%;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .review-container .container {
+    margin: auto;
+    width: 100%;
+    flex-flow: column;
+  }
+
+  .customer-card {
+    width: 80%;
+  }
+
+  .review .comment {
+    width: 100%;
+    margin: auto;
+  }
+
+  .review .comment h2 {
+    font-size: 20px;
+    line-height: 24px;
+    padding-top: 20px;
+  }
+
+  .review .comment p {
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 25px;
+  }
+
+  .customer-card img {
+    width: 60px;
+    height: 60px;
+    top: -25px;
+    left: -30px;
+  }
+
+  .featured-container .article-container {
+    /* border: 1px solid red; */
+    margin-top: 20px;
+  }
+
+  .featured {
+    background-color: var(--main-light);
+    width: 100%;
+    height: 679px;
+    /* border: 5px solid blue; */
+  }
+
+  .featured .sub-section {
+    padding-top: 40px;
+    /* border: 5px solid red; */
+  }
+
+  .featured-container {
+    /* border: 5px solid green; */
+  }
+
+  .f-section {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .featured h2 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+
+  .featured-container .kiss-couch {
+    width: 505px;
+    height: 311px;
+  }
+
+  .featured-container .kiss-couch img {
+    width: 100%;
+  }
+
+  .featured-container .article-container h3 {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+
+  .featured-container .article-container p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .article-container .kiss-price span {
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  .article-container .kiss-price span * > {
+    text-align: center;
+  }
+
+  .article-container .kiss-price .buy-now {
+    padding: 10px 30px;
+  }
+
+  .footer-container {
+    flex-flow: column;
+    justify-content: space-between;
+    height: 150vh;
+  }
+
+  footer .newsletter {
+    width: 100%;
+
+    
+  }
+
+  footer .newsletter h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  footer .newsletter .input {
+    width: 100%;
+  }
+
+  footer .newsletter .register {
+    width: 100%;
+    border: 1px solid red;
+  }
+
+  footer .newsletter .register a  {
+    width: 100%;
+    border: 1px solid red;
+  }
+
+  footer .footer-tags {
+    height: 100%;
+    flex-flow: column;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    width: 100%;
+  }
+}
