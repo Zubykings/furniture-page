@@ -3,7 +3,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat Alternates", sans-serif;
-  /* border: 1px solid red; */
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
 :root {
   --main-color: #583101;
@@ -13,21 +17,34 @@
   --main-light: #fff6eb;
   --footer-color: #2f1a01;
 }
+
 a {
   color: var(--anchor);
   text-decoration: none;
 }
+
 body {
   max-width: 100%;
-  /* overflow: hidden; */
   scroll-behavior: smooth;
 }
+
 .sub-body {
   width: 100%;
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.fa-bars {
+  display: none;
 }
 
 /* ---------HEADER SECTION--------- */
 header {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  overflow: hidden;
   width: 100%;
   height: 140px;
   color: #fff;
@@ -37,6 +54,7 @@ header {
   justify-content: space-around;
   align-items: center;
 }
+
 header .logo {
   display: flex;
   flex-flow: row nowrap;
@@ -53,6 +71,18 @@ header .logo2 {
   object-fit: contain;
   width: 110.64px;
   height: 44.91px;
+}
+
+header .fa-solid {
+  display: none;
+}
+
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 65%;
 }
 
 nav ul {
@@ -90,8 +120,8 @@ header nav ul li a {
   font-size: 16px;
   line-height: 19.5px;
   transition: 0.8s;
-  /* padding-left: 10px; */
 }
+
 header nav ul li:nth-child(1) a {
   border-bottom: 3px solid;
   border-radius: 4px;
@@ -105,7 +135,6 @@ header nav ul li:nth-child(1) a {
   border-radius: 8px;
   padding: 10px 40px 10px 40px;
   background-color: var(--anchor);
-  margin: auto;
   border: 1px solid #fff6eb;
   transition: all 0.8s;
 }
@@ -118,8 +147,10 @@ header nav ul li:nth-child(1) a {
 
 /* ------ HERO SECTION ------- */
 .hero {
+  position: initial;
   width: 100%;
   background-color: var(--main-light);
+  padding-top: 140px;
 }
 
 .hero .hero-container {
@@ -178,7 +209,7 @@ header nav ul li:nth-child(1) a {
   margin-left: 10px;
   transition: all 0.8s;
 }
-/* /////////////////////////////////////////////////// */
+
 .hero .buttons a:nth-child(1):hover,
 .article-container .kiss-price .buy-now:hover {
   background-color: var(--main-light);
@@ -193,7 +224,6 @@ header nav ul li:nth-child(1) a {
 }
 
 .hero .sofa {
-  /* background-image: url(/images/Main\ Sofa.png); */
   width: 706.01px;
   height: 500px;
   padding-left: 24px;
@@ -227,11 +257,13 @@ header nav ul li:nth-child(1) a {
   font-size: 46.08px;
   line-height: 56.17px;
 }
+
 .hero .sofa .tag span {
   font-size: 17.28px;
   line-height: 28.8px;
   text-align: center;
 }
+
 .choose-us {
   display: flex;
   flex-flow: column;
@@ -273,6 +305,7 @@ header nav ul li:nth-child(1) a {
   color: var(--main-deep);
   margin-top: 20px;
 }
+
 .cards .card-body .card-content {
   width: 250px;
   height: 89px;
@@ -280,6 +313,7 @@ header nav ul li:nth-child(1) a {
   padding: 10px 15px;
   text-align: start;
 }
+
 .cards .card-body .card-content h2 {
   font-weight: 700;
   font-size: 24px;
@@ -291,6 +325,7 @@ header nav ul li:nth-child(1) a {
   font-size: 16px;
   margin-top: 10px;
 }
+
 .cards .card-body .card-icon {
   position: absolute;
   display: flex;
@@ -303,8 +338,8 @@ header nav ul li:nth-child(1) a {
   border-radius: 50%;
   border: 5px solid #402400;
   background-color: var(--main-light);
-  /* z-index: 100; */
 }
+
 .cards .card-body .card-icon i {
   font-size: 33px;
   padding: 10px;
@@ -603,11 +638,11 @@ header nav ul li:nth-child(1) a {
 
 footer {
   background-color: var(--footer-color);
-  /* height: 513px; */
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
+  position: relative;
 }
 
 .footer-container {
@@ -615,21 +650,20 @@ footer {
   width: 90%;
   margin: auto;
   display: flex;
-  /* border: 1px solid red; */
-  /* flex: 0 0 50%; */
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
-  padding-top: 50px ;
-  padding-bottom: 50vh;
+  padding-top: 50px;
+  padding-bottom: 10vh;
 }
 
 footer .newsletter {
-  width: 45%;
-  height: 195px;
+  width: 40%;
+  height: 225px;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin: auto;
 }
 
 footer .newsletter h3 {
@@ -660,17 +694,20 @@ input:focus {
   font-size: 16px;
 }
 
+.newsletter .register span {
+  display: none;
+}
+
 footer .newsletter .register a:hover {
   background-color: #2f1a01;
 }
 
 footer .footer-tags {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    /* border: 1px solid red; */
-    width: 55%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
 }
 
 footer span {
@@ -691,16 +728,22 @@ footer ul li a {
   font-weight: 500;
   line-height: 2.3;
   color: #fff;
+  padding: 5px 8px;
+  width: 100%;
+}
+
+footer .footer-tags li:hover {
+  background-color: var(--main-color);
+  border-radius: 10px;
 }
 
 footer .links {
-  width: 108px;
+  width: 150px;
   padding: 10px;
 }
 
 footer .footer-prod {
-  width: 181px;
-  /* border: 1px solid; */
+  width: 200px;
 }
 
 footer .contact-us {
@@ -709,16 +752,29 @@ footer .contact-us {
   justify-content: space-around;
   align-items: start;
   color: var(--main-light);
-  width: 220px;
-  height: 288px;
-}
-
-footer .contact-us p {
+  width: 300px;
+  height: 180px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.7;
 }
 
 footer .contact-us p span {
   font-weight: 600;
 }
+
 footer .contact-us .phone i {
   font-size: 20px;
+}
+
+.cc-tag {
+  position: absolute;
+  bottom: 0;
+  color: var(--main-light);
+  font-size: small;
+  right: 40%;
+}
+
+.cc-tag span {
+  color: red;
 }
